@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/symph.css">
+	<title>Description</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<div class="header__container container">
+					<a href="" class="header__logo">Symphony</a>
+					<nav class="navbar">
+						<div class="container">
+							<div class="navbar__wrap">
+								<div class="hamb">
+									<div class="hamb__field" id="hamb">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+									</div>
+								</div>
+								<a href="#" class="logo" id="logo">Symphony</a>
+								<ul class="menu" id="menu">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="product.html">Про нас</a></li>
+									<li><a href="category.html">Категории</a></li>
+									<li><a href="feetback.html">Связаться с нами</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div class="popup" id="popup"></div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="container">
+					<div class="main__header">Symfony Framework - руководство для новичков</div>
+					<div class="main__block">
+						<p class="main__parag">
+							Symfony - это PHP-фреймворк с открытым исходным кодом, разработанный для веб-приложений. В этой статье мы обсудим, как появился Symfony, важные компоненты, архитектуру, рабочий процесс, основные этапы установки и многое другое.
+						</p>
+						<p class="main__parag">
+							Symfony зарекомендовал себя как фундамент для веб-сервисов. Он содержит многоразовые библиотеки и компоненты PHP. Такие проекты, как Laravel и Drupal, используют компоненты Symfony в своих приложениях.
+						</p>
+						<p class="main__parag">
+							Symfony был разработан, чтобы сократить время создания и обслуживания веб-приложений и избежать повторяющихся задач. На него сильно повлияла  среда Spring. 
+						</p>
+						<div class="main__image">
+							<img src="img/symphony-logo.jpg">
+						</div>
+						<div class="main__header">История Symfony</div>
+						<p class="main__parag">
+							Symfony был выпущен SensioLabs и опубликован 18 октября 2005 г. как бесплатное программное обеспечение. Он был выпущен под лицензией MIT. Однако в 2007 году была выпущена более стабильная первая версия, но она не была такой многообещающей, как версия 2.0. Однако разработчики обнаружили серьезные проблемы с обновлением и обратной совместимостью. Самая лучшая и многообещающая версия - 2.3, которая имела хорошую стабильность и функциональность. Последующие обновления 2.4, 2.5, 2.6 были не столь заметны, и все последующие выпуски были обратно совместимы. Текущая версия - 5.2, которая имеет некоторые важные функции, такие как псевдо-локализация, 24-битные цвета на консоли, объекты TranslatableMessage, поддержка атрибутов / аннотаций PHP 8 и многое другое.
+						</p>
+						<div class="main__header">Функции</div>
+						<p class="main__parag">
+							Как мы упоминали ранее, основная цель Symfony - оптимизация веб-приложений. Фреймворки Symfony обладают следующими уникальными особенностями:
+						</p>
+						<ul class="main__list">
+							<li>Микро-фреймворк на основе MVC (модель-представление-контроллер)</li>
+							<li>Высокопроизводительный фреймворк PHP</li>
+							<li>Многоразовые компоненты, которые не связаны друг с другом</li>
+							<li>Функции ведения журнала ошибок и управления сеансом</li>
+							<li>Гибкая маршрутизация URI</li>
+							<li>Активное сообщество</li>
+							<li>Высокоразвитый шаблонизатор Twig</li>
+							<li>Расширяемый</li>
+							<li>Xорошая читаемость кода</li>
+							<li>Поддержка нескольких платформ баз данных</li>
+						</ul>
+						<div class="main__header">Архитектура Symfony</div>
+						<p class="main__parag">
+							Архитектура проста и состоит из компонентов и пакетов, которые можно использовать повторно.
+						</p>
+						<p class="main__parag">
+							Компоненты обеспечивают единую специализированную функциональность. Например, компонент HTTP, компонент кеширования, компонент файловой системы и т. д. Это не что иное, как автономные библиотеки PHP. 
+						</p>
+						<p class="main__parag">
+							Пакеты похожи на плагины, их проще создавать и использовать. Пакет может использовать множество компонентов Symfony и предоставлять множество функций. Сама основная веб-структура Symfony представляет собой пакет (FrameworkBundle). 
+						</p>
+						<p class="main__parag">
+							Компоненты могут получить доступ к любому количеству пакетов. Общие пакеты, используемые в платформе, - это FrameworkBundle, FrameworkExtraBundle, DoctrineBundle. Помимо этого, у нас могут быть собственные пакеты и пакеты доктрин. 
+						</p>
+						<div class="main__image">
+							<img src="img/framework.jpg">
+						</div>
+						<div class="main__header">Преимущества Symfony Framework</div>
+						<p class="main__parag">Преимущества Symfony:</p>
+						<ul class="main__list">
+							<li><span class="main__span">Быстрая разработка</span> : поскольку Symfony - это компонентный фреймворк, его можно легко установить и использовать. Это делает разработку более быстрой и эффективной, а также помогает разработчикам быстро создавать приложения.</li>
+							<li><span class="main__span">Гибкость</span> : Благодаря таким функциям, как внедрение зависимостей (DI) и диспетчеризация событий, Symfony упрощает разработчикам создание даже сложных приложений с высочайшим уровнем конфигурации, обеспечивая гибкость кода.</li>
+							<li><span class="main__span">Расширяемость</span> : поскольку все представляет собой пакет и добавляет уникальную функциональность, разработчики могут повторно использовать пакеты или добавлять их в структуру. Нет необходимости изменять фреймворк; только комплект можно настроить в соответствии с требованиями конкретного проекта.</li>
+							<li><span class="main__span">Стабильность</span> : после первых сбоев новые версии Symfony были довольно стабильными и устойчивыми. Они также совместимы с общедоступными API. </li>
+							<li><span class="main__span">Простота разработки</span> : разработчикам не нужно беспокоиться о второстепенных функциях и сосредоточиться на своей бизнес-логике, в то время как фреймворк заботится об основных функциях. Symfony работает как с маленькими, так и с большими проектами благодаря своей архитектуре, основанной на компонентах и пакетах. Панели инструментов веб-отладки помогают решать различные проблемы на ранней стадии разработки, обеспечивая высокое качество результатов.</li>
+						</ul>
+						<div class="main__image-code">
+							<img src="img/symfony-code.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__icons">
+				<div class="container">
+					<div class="footer__block-3">
+						<div class="footer__title-2">
+							Site is supporting by Nix Community
+						</div>
+						<div class="footer__social-icons">
+							<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwik-4up-Oj4AhUshP0HHTOUA-kQFnoECAkQAQ&url=https%3A%2F%2Fru-ru.facebook.com%2Fnixsolutionsltd%2F&usg=AOvVaw1QFMIiabd4qG_TU0GrDC-r"><img src="img/Vector-6.jpg"></a>
+							<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiU8LDE-Oj4AhXRg_0HHQjOCeQQFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2Fnix_community%2F%3Fhl%3Dru&usg=AOvVaw0gU80z8p4bosU50xCvTKUK"><img src="img/Vector-7.jpg"></a>
+							<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj43r3X-Oj4AhVeif0HHdWfC44QFnoECAcQAQ&url=https%3A%2F%2Fmobile.twitter.com%2Fnix_company&usg=AOvVaw0AcTI80I28f93AuReGeBkX"><img src="img/Vector-8.jpg"></a>
+							<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwirzvzv-Oj4AhU7_rsIHVWKChMQFnoECAQQAQ&url=https%3A%2F%2Fwww.youtube.com%2Fc%2FNIX_Community%2Fvideos&usg=AOvVaw23PioOIBfiZ8DpuXet8lUH"><img src="img/Vector-9.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
